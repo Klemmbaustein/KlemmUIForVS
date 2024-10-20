@@ -8,7 +8,7 @@ $serverExecutable = "src/Resources/KlemmUILanguageServer.exe"
 
 cd ${serverPath}
 cmake -S . -B ${cmakeOutDir}
-cmake --build ${cmakeOutDir} -j 12
+cmake --build ${cmakeOutDir} --config ${buildConfig} -j 12
 cd ..
 
 if (test-path ${serverPath}/${cmakeOutDir}/KlemmUILanguageServer.exe)

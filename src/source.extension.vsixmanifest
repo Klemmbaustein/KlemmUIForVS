@@ -3,12 +3,12 @@
     <Metadata>
         <Identity Id="BCDAD0EB-2940-4CFE-BD8E-741445ECC18A" Version="1.0" Language="en-US" Publisher="Klemmbaustein" />
         <DisplayName>KlemmUI Language Extension for Visual Studio</DisplayName>
-        <Description xml:space="preserve">dasda</Description>
-        <MoreInfo>https://github.com/madskristensen/TextmateSample</MoreInfo>
+        <Description xml:space="preserve">KlemmUI UI language support for Visual Studio 2022</Description>
+        <MoreInfo>https://github.com/Klemmbaustein/KlemmUIForVS</MoreInfo>
         <License>Resources\LICENSE.txt</License>
         <Icon>Resources\Icon.png</Icon>
         <PreviewImage>Resources\Icon.png</PreviewImage>
-        <Tags>textmate, bundle, sample</Tags>
+        <Tags>textmate, lsp, klemmui</Tags>
         <Preview>true</Preview>
     </Metadata>
     <Installation>
