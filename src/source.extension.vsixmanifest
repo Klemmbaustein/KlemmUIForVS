@@ -3,12 +3,13 @@
     <Metadata>
         <Identity Id="BCDAD0EB-2940-4CFE-BD8E-741445ECC18A" Version="1.0" Language="en-US" Publisher="Klemmbaustein" />
         <DisplayName>KlemmUI Language Extension for Visual Studio</DisplayName>
-        <Description xml:space="preserve">A simple Textmate grammar extension for .kui (KlemmUI UI element) files.A</Description>
+        <Description xml:space="preserve">dasda</Description>
         <MoreInfo>https://github.com/madskristensen/TextmateSample</MoreInfo>
-        <License>Resources\LICENSE</License>
+        <License>Resources\LICENSE.txt</License>
         <Icon>Resources\Icon.png</Icon>
         <PreviewImage>Resources\Icon.png</PreviewImage>
         <Tags>textmate, bundle, sample</Tags>
+        <Preview>true</Preview>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,18.0)">
@@ -17,6 +18,7 @@
     </Installation>
     <Dependencies>
         <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+        <Dependency Id="Microsoft.VisualStudio.MPF.15.0" DisplayName="Visual Studio MPF 15.0" d:Source="Installed" Version="[15.0]" />
     </Dependencies>
     <Assets>
         <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="languages.pkgdef" />

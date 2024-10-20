@@ -9,4 +9,4 @@
 "DefaultIconMoniker"="KnownMonikers.CPPWindowsService"
 
 [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\MockLanguageExtension]
-@="$PackageFolder$\MockLanguageExtensionSettings.json"
+@="$PackageFolder$\KlemmUIExtensionSettings.json"

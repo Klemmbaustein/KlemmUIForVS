@@ -185,7 +185,7 @@
 				<key>name</key>
 				<string>meta.const</string>
 				<key>match</key>
-				<string>\bconst\s+\w+\s*?(=\s*?(.*?)??)??(;|$)</string>
+				<string>\b(const|global)\s+\w+\s*?(=\s*?(.*?)??)??(;|$)</string>
 				<key>captures</key>
 				<dict>
 					<key>0</key>
@@ -255,7 +255,7 @@
 			<key>const-assign</key>
 			<dict>
 				<key>match</key>
-				<string>\bconst\s*?\w+?\b</string>
+				<string>\b(const|global)\s*?\w+?\b</string>
 				<key>captures</key>
 				<dict>
 					<key>0</key>
@@ -329,7 +329,7 @@
 				<key>name</key>
 				<string>keyword</string>
 				<key>match</key>
-				<string>\bconst\b</string>
+				<string>\b(const|global)\b</string>
 			</dict>
 			<key>var</key>
 			<dict>
