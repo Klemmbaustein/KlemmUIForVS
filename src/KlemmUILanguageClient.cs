@@ -133,7 +133,7 @@ namespace KlemmUI.LanguageServer
 			return Task.FromResult(failureContext);
 		}
 
-		internal class FooMiddleLayer : ILanguageClientMiddleLayer2<JToken>
+		internal class KuiMiddleLayer : ILanguageClientMiddleLayer2<JToken>
 		{
 			public bool CanHandle(string methodName)
 			{

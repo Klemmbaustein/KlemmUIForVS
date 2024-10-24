@@ -10,13 +10,13 @@ namespace KlemmUI.LanguageServer
 		[Export]
 		[Name("kui")]
 		[BaseDefinition(CodeRemoteContentDefinition.CodeRemoteContentTypeName)]
-		internal static ContentTypeDefinition FooContentTypeDefinition;
+		internal static ContentTypeDefinition KuiContentTypeDefinition;
 
 
 		[Export]
 		[FileExtension(".kui")]
 		[ContentType("kui")]
-		internal static FileExtensionToContentTypeDefinition FooFileExtensionDefinition;
+		internal static FileExtensionToContentTypeDefinition KuiFileExtensionDefinition;
 	}
 #pragma warning restore 649
 }
