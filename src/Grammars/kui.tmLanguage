@@ -31,14 +31,14 @@
 				<key>name</key>
 				<string>constant.numeric</string>
 				<key>match</key>
-				<string>\(.*?\)(ar|sr|px|rgb|)</string>
+				<string>\(.*?\)(ar|sr|px|rgb|pn|%|)</string>
 			</dict>
 			<key>size</key>
 			<dict>
 				<key>name</key>
 				<string>constant.numeric</string>
 				<key>match</key>
-				<string>\b(\d+\.\d+|\d+)(ar|sr|px|)\b</string>
+				<string>\b(\d+\.\d+|\d+)(ar|sr|px|pn|%|)</string>
 			</dict>
 			<key>namedValue</key>
 			<dict>
