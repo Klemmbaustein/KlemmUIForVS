@@ -132,24 +132,5 @@ namespace KlemmUI.LanguageServer
 
 			return Task.FromResult(failureContext);
 		}
-
-		internal class KuiMiddleLayer : ILanguageClientMiddleLayer2<JToken>
-		{
-			public bool CanHandle(string methodName)
-			{
-				return methodName == Methods.TextDocumentCompletionName;
-			}
-
-			public Task HandleNotificationAsync(string methodName, JToken methodParam, Func<JToken, Task> sendNotification)
-			{
-				throw new NotImplementedException();
-			}
-
-			public async Task<JToken> HandleRequestAsync(string methodName, JToken methodParam, Func<JToken, Task<JToken>> sendRequest)
-			{
-				var result = await sendRequest(methodParam);
-				return result;
-			}
-		}
 	}
 }
