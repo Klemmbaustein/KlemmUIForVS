@@ -1,0 +1,3 @@
+[submodule "KlemmUILanguageServer"]
+	path = KlemmUILanguageServer
+	url = https://github.com/Klemmbaustein/KlemmUILanguageServer.git

@@ -13,6 +13,7 @@
   <ItemGroup>
     <None Remove="Grammars\kui.tmLanguage" />
     <None Remove="klemmui.pkgdef" />
+    <None Remove="Resources\KlemmUILanguageServer.exe" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,4 +31,12 @@
     <Content Include="Grammars\kui.tmLanguage" />
     <Content Include="klemmui.pkgdef" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\KlemmUILanguageServer.exe" />
+  </ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="cd $(SolutionDir)&#xD;&#xA;pwsh .\BuildLanguageServer.ps1 -buildConfig $(ConfigurationName)" />
+  </Target>
 </Project>
