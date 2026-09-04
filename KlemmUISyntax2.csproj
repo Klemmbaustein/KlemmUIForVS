@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net481</TargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>14</LangVersion>
+
+    <!-- VSIX settings -->
+    <VSSDKBuildToolsAutoSetup>true</VSSDKBuildToolsAutoSetup>
+    <RootNamespace>KlemmUI.LanguageServer</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Grammars\kui.tmLanguage" />
+    <None Remove="klemmui.pkgdef" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectCapability Include="CreateVsixContainer" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.LanguageServer.Protocol" Version="17.2.8" />
+    <PackageReference Include="Microsoft.VisualStudio.SDK" Version="17.14.40265" ExcludeAssets="runtime" />
+    <PackageReference Include="Microsoft.VSSDK.BuildTools" Version="18.9.820" />
+    <PackageReference Include="System.ComponentModel.Composition" Version="10.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Grammars\kui.tmLanguage" />
+    <Content Include="klemmui.pkgdef" />
+  </ItemGroup>
+</Project>
